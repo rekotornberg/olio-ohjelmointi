@@ -15,12 +15,12 @@ int main()
 
 int game(int maxnum){
     int num = 0;
-    int satNum;
+    int satNum = 0;
     int arvaukset = 1;
 
     srand(time(NULL));
-    satNum = rand() % maxnum + 1;
-    //cout << satNum << endl;
+    satNum = rand() % maxnum;
+
     while (true){
         cout << "Arvaa numero 1-" << maxnum << endl;
         cin >> num;
